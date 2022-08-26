@@ -17,6 +17,7 @@ d2 = datetime.today() - timedelta(days=365)
 d2 = d2.strftime("%Y-%m-%d")
 start_date = d2
 
+
 # Get CSV files from ticker data
 for stock in tickers:
  stock_data = web.get_data_yahoo(stock, start = start_date, end = end_date)
